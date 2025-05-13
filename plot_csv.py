@@ -175,32 +175,9 @@ def plot_encoders(filepath,base_name,timestamp,replotting_flag=0,filename = ""):
     ax3.legend()
     ax3.grid(True)
 
-    # === Figure 3: Angular Velocity vs. Time ===
-    #fig3, ax3 = plt.subplots(figsize=(14, 6))
-    #ax3.step(time_s, dy1_dt, where='mid', label='Motor Encoder dθ/dt vs Angle', color='tab:blue')
-    #ax3.step(time_s, dy2_dt, where='mid', label='Glass Encoder dθ/dt vs Angle', color='tab:orange')
-    #ax3.set_xlabel("Time (s)")
-    #ax3.set_ylabel("Angular Velocity (°/s)")
-    #ax3.set_title("Angular Velocity vs. Wrapped Angle (Step Plot)")
-    #ax3.legend()
-    #ax3.grid(True)
-    #fig3.canvas.manager.window.wm_geometry(f"{half_width}x{window_height}+{half_width}+0")  # Right half
-    # Show both figures
+
     plt.show()
 
-    #axs[2].plot(time_s, c_cmd, label='Coarse Command Value', color='tab:green')
-    #axs[2].set_xlabel("Time (s)")
-    #axs[2].set_ylabel("Coarse Command Values")
-    #axs[2].set_title("Coarse Commands vs. Time")
-    #axs[2].legend()
-    #axs[2].grid(True)
-
-    #axs[3].plot(time_s, y3, label='Test graph', color='tab:red')
-    #axs[3].set_xlabel("Time (s)")
-    #axs[3].set_ylabel("motor with offset")
-    #axs[3].set_title("motor with offset vs. Time")
-    #axs[3].legend()
-    #axs[3].grid(True)
 
     # autosaving the plots 
     make_plot_dir_if_doesnt_exist() #as a redundancy to make sure that the directory exists before trying to save to it
